@@ -1,0 +1,1524 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>课程库页面</title>
+		<script type="text/javascript" src="js/jQueryv3.2.1.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript" src="js/jquery.page.js"></script>
+		<link rel="stylesheet" href="indexless.css" />
+		<!--<link rel="stylesheet" href="css/index.css" />-->
+	</head>
+
+	<body>
+
+		<!--Nav-->
+		<div id="header">
+			<header>
+				<ul class="leftNav">
+					<li>
+						<a href="//www.jikexueyuan.com" class="logo">
+							<img src="//e.jikexueyuan.com/headerandfooter/images/logo.png?t=1495686193000" width="109" height="40">
+						</a>
+					</li>
+					<li>
+						<a href="http://www.jikexueyuan.com/">首页</a>
+					</li>
+					<li class="zhiyeLi">
+						<a>职业学院</a>
+						<i class="arrow-icon" style="border-color: rgb(53, 181, 88);"></i>
+						<div class="zhiyeDiv">
+							<h5>前端学院</h5>
+							<a href="//www.jikexueyuan.com/zhiye/web"><i class="web-icon"></i>Web 前端工程师</a>
+							<a href="//www.jikexueyuan.com/zhiye/wechatapp"><i class="wechat-icon"></i>微信小程序工程师</a>
+							<h5>后端学院</h5>
+							<a href="//www.jikexueyuan.com/zhiye/php"><i class="php-icon"></i>PHP 工程师<span class="new-icon">New</span></a>
+							<a href="//www.jikexueyuan.com/zhiye/python"><i class="python-icon"></i>Python Web工程师</a>
+							<a href="//www.jikexueyuan.com/zhiye/go"><i class="go-icon"></i>Go语言工程师</a>
+						</div>
+					</li>
+					<li class="huiYuanLi">
+						<a href="#">会员课程</a>
+						<i class="arrow-icon" style="border-color: rgb(53, 181, 88);"></i>
+						<div class="huiYuanDiv">
+							<a href="//www.jikexueyuan.com/course/"><i class="kck-icon"></i>课程库<span>2500+</span></a>
+							<a href="//ke.jikexueyuan.com/zhiye/"><i class="zyljt-icon"></i>职业路径图<span>9</span></a>
+							<a href="//www.jikexueyuan.com/path/"><i class="zstxt-icon"></i>知识体系图<span>24</span></a>
+							<a href="//ke.jikexueyuan.com/xilie/"><i class="xlkc-icon"></i>系列课程<span>101</span></a>
+							<a href="//www.jikexueyuan.com/tag/"><i class="kcbq-icon"></i>课程标签<span>4000+</span></a>
+							<a href="//www.jikexueyuan.com/vip/"><i class="vip-icon"></i>VIP会员购买<span>30/月  260/年</span></a>
+						</div>
+					</li>
+					<li class="jiKexuyuanLi">
+						<a href="#">极客学院</a>
+						<i class="arrow-icon" style="border-color: rgb(53, 181, 88);"></i>
+						<div class="jiKexuyuanDiv">
+							<a href="//wenda.jikexueyuan.com"><i class="jswd-icon"></i>技术问答<span>20000+</span></a>
+							<a href="//wiki.jikexueyuan.com"><i class="wiki-icon"></i>Wiki<span>351</span></a>
+							<a href="//qun.jikexueyuan.com"><i class="sq-icon"></i>社群<span>7000+</span></a>
+							<a href="//download.jikexueyuan.com"><i class="zygx-icon"></i>资源下载<span>3000+</span></a>
+						</div>
+					</li>
+				</ul>
+
+				<ul class="rightNav">
+					<li class="personCenterLi">
+						<span class="navCirBack">
+							<a href="http://my.jikexueyuan.com/setting/user/">
+								<img src="https://assets.jikexueyuan.com/user/avtar/default.gif" id="userpoto" style="width: 25px; height: 25px;">
+							</a>
+							
+								<dl class="personCenter">
+									<i class="top-icon"></i>
+									<dd>
+										<a href="http://my.jikexueyuan.com/user/myvip" class="rzno-vip"></a>
+										<a href="http://my.jikexueyuan.com/user/myvip" class="year-vip"></a>
+									</dd>
+									<dd><a href="http://xue.jikexueyuan.com/"><i class="xxzx-icon"></i>学习中心</a>
+									</dd>
+									<dd><a href="http://my.jikexueyuan.com/0yjUgVWqX"><i class="grzy-icon"></i>个人主页
+									    </a>
+									</dd>
+									<dd><a href="http://my.jikexueyuan.com/setting/user/"><i class="zhsz-icon"></i>账号设置
+									</a>
+									</dd>
+									<dd><a href="http://passport.jikexueyuan.com/submit/logout"><i class="tc-icon"></i>退出登录
+									</a>
+									</dd>
+								</dl>
+						</span>
+					</li>
+					<li>
+						<span class="noti-icon" id="openNoti">
+							<em class="unread-count unread-style" style="display: none;">&nbsp;</em></span>
+					</li>
+					<li class="appLoad">
+						<span class="app-icon">
+							<div class="submenu">
+							<img src="//e.jikexueyuan.com/headerandfooter/images/heade-rwm.png?t=1495686193000" style="width: 120px;">
+						    </div>
+						</span>
+
+					</li>
+					<li><span class="search-icon" id="search-btn"></span></li>
+				</ul>
+			</header>
+		</div>
+		<!--content-->
+		<div id="content" class="clearfix">
+			<div class="contentLeft">
+				<div class="kechengKu">
+					<div>
+						<h2><a href="//www.jikexueyuan.com/course"><i class="icon-course-curr"></i>课程库</a></h2>
+					</div>
+					<ul class="contentLeftLi">
+						<li>
+							<a cgid="1" href="//www.jikexueyuan.com/course/mobile/">移动开发</a>
+							<div class="yidongkaifDiv">
+
+								<dl>
+									<dt><a href="//www.jikexueyuan.com/course/app/" cgid="58">应用开发</a></dt>
+									<dd class="cf">
+
+										<a href="//www.jikexueyuan.com/course/android/" cgid="59">Android</a>
+
+										<a href="//www.jikexueyuan.com/course/ios/" cgid="60">iOS</a>
+
+									</dd>
+								</dl>
+
+								<dl>
+									<dt><a href="//www.jikexueyuan.com/course/games/" cgid="13">游戏开发</a></dt>
+									<dd class="cf">
+
+										<a href="//www.jikexueyuan.com/course/cocos/" cgid="63">Cocos</a>
+
+										<a href="//www.jikexueyuan.com/course/unity3d/" cgid="64">Unity3D</a>
+
+										<a href="//www.jikexueyuan.com/course/spritekit2d/" cgid="65">SpriteKit 2D</a>
+
+										<a href="//www.jikexueyuan.com/course/unreal/" cgid="66">Unreal</a>
+
+									</dd>
+								</dl>
+
+								<dl>
+									<dt><a href="//www.jikexueyuan.com/course/frame/" cgid="14">常用框架</a></dt>
+									<dd class="cf">
+
+										<a href="//www.jikexueyuan.com/course/cordova/" cgid="68">Cordova</a>
+
+										<a href="//www.jikexueyuan.com/course/reactnative1/" cgid="382">React Native</a>
+
+									</dd>
+								</dl>
+
+							</div>
+						</li>
+						<li>
+							<a cgid="2" href="//www.jikexueyuan.com/course/web/">前端开发</a>
+							<div class="qianduankaifDiv">
+
+								<dl>
+									<dt><a href="//www.jikexueyuan.com/course/app/" cgid="58">前端开发</a></dt>
+									<dd class="cf">
+
+										<a href="//www.jikexueyuan.com/course/android/" cgid="59">Html</a>
+
+										<a href="//www.jikexueyuan.com/course/ios/" cgid="60">CSS</a>
+
+										<a href="//www.jikexueyuan.com/course/ios/" cgid="60">JavaScript</a>
+
+										<a href="//www.jikexueyuan.com/course/ios/" cgid="60">HTML5</a>
+
+										<a href="//www.jikexueyuan.com/course/ios/" cgid="60">CSS3</a>
+
+										<a href="//www.jikexueyuan.com/course/ios/" cgid="60">技术前瞻</a>
+
+									</dd>
+								</dl>
+
+								<dl>
+									<dt><a href="//www.jikexueyuan.com/course/games/" cgid="13">前端进阶</a></dt>
+									<dd class="cf">
+
+										<a href="//www.jikexueyuan.com/course/cocos/" cgid="63">Typescript</a>
+
+										<a href="//www.jikexueyuan.com/course/unity3d/" cgid="64">前端安全</a>
+
+										<a href="//www.jikexueyuan.com/course/spritekit2d/" cgid="65">项目实战</a>
+
+									</dd>
+								</dl>
+
+								<dl>
+									<dt><a href="//www.jikexueyuan.com/course/frame/" cgid="14">前端框架</a></dt>
+									<dd class="cf">
+
+										<a href="//www.jikexueyuan.com/course/cordova/" cgid="68">JQuery</a>
+
+										<a href="//www.jikexueyuan.com/course/reactnative1/" cgid="382">JQuery UI</a>
+
+										<a href="//www.jikexueyuan.com/course/cordova/" cgid="68">JQuery Mobile</a>
+
+										<a href="//www.jikexueyuan.com/course/reactnative1/" cgid="382">Ext JS</a>
+
+										<a href="//www.jikexueyuan.com/course/cordova/" cgid="68">AngularJS</a>
+
+										<a href="//www.jikexueyuan.com/course/reactnative1/" cgid="382">ReactJS</a>
+
+										<a href="//www.jikexueyuan.com/course/cordova/" cgid="68">Bootstrap</a>
+
+										<a href="//www.jikexueyuan.com/course/reactnative1/" cgid="382">React Native</a>
+
+										<a href="//www.jikexueyuan.com/course/cordova/" cgid="68">Backbone</a>
+
+										<a href="//www.jikexueyuan.com/course/reactnative1/" cgid="382">Three.js</a>
+
+										<a href="//www.jikexueyuan.com/course/cordova/" cgid="68">MooTools</a>
+
+										<a href="//www.jikexueyuan.com/course/reactnative1/" cgid="382">Compass</a>
+
+									</dd>
+								</dl>
+
+								<dl>
+									<dt><a href="//www.jikexueyuan.com/course/frame/" cgid="14">HTML5游戏</a></dt>
+									<dd class="cf">
+
+										<a href="//www.jikexueyuan.com/course/cordova/" cgid="68">Canvas</a>
+
+										<a href="//www.jikexueyuan.com/course/reactnative1/" cgid="382">SVG</a>
+
+										<a href="//www.jikexueyuan.com/course/cordova/" cgid="68">WebGL</a>
+
+										<a href="//www.jikexueyuan.com/course/reactnative1/" cgid="382">Cocos2d-js</a>
+
+										<a href="//www.jikexueyuan.com/course/cordova/" cgid="68">CreateJS</a>
+
+										<a href="//www.jikexueyuan.com/course/reactnative1/" cgid="382">Flash</a>
+
+										<a href="//www.jikexueyuan.com/course/cordova/" cgid="68">Unreal</a>
+
+										<a href="//www.jikexueyuan.com/course/reactnative1/" cgid="382">Egret</a>
+
+										<a href="//www.jikexueyuan.com/course/reactnative1/" cgid="382">Phaser</a>
+									</dd>
+								</dl>
+
+							</div>
+						</li>
+						<li>
+							<a cgid="2" href="//www.jikexueyuan.com/course/web/">后端端开发</a>
+						</li>
+						<li>
+							<a cgid="4" href="//www.jikexueyuan.com/course/base/">基础知识</a>
+						</li>
+						<li>
+							<a cgid="5" href="//www.jikexueyuan.com/course/clouddata/">云计算&amp;大数据</a>
+						</li>
+						<li class="wulianwangLi">
+							<a cgid="6" href="//www.jikexueyuan.com/course/intellegence/">智能硬件&amp;物联网</a>
+							<div class="yidongkaifDiv">
+
+								<dl>
+									<dt><a href="//www.jikexueyuan.com/course/app/" cgid="58">硬件架构</a></dt>
+									<dd class="cf">
+
+										<a href="//www.jikexueyuan.com/course/android/" cgid="59">C51</a>
+
+										<a href="//www.jikexueyuan.com/course/ios/" cgid="60">ARM</a>
+
+										<a href="//www.jikexueyuan.com/course/android/" cgid="59">Keil</a>
+
+										<a href="//www.jikexueyuan.com/course/ios/" cgid="60">Cortex-M</a>
+
+										<a href="//www.jikexueyuan.com/course/android/" cgid="59">Coretex-A</a>
+
+										<a href="//www.jikexueyuan.com/course/ios/" cgid="60">AVR</a>
+
+									</dd>
+								</dl>
+
+								<dl>
+									<dt><a href="//www.jikexueyuan.com/course/games/" cgid="13">物联网操作系统</a></dt>
+									<dd class="cf">
+
+										<a href="//www.jikexueyuan.com/course/cocos/" cgid="63">RTOS</a>
+
+										<a href="//www.jikexueyuan.com/course/unity3d/" cgid="64">Android Wear</a>
+
+										<a href="//www.jikexueyuan.com/course/spritekit2d/" cgid="65">Apple Watchkit</a>
+
+									</dd>
+								</dl>
+
+								<dl>
+									<dt><a href="//www.jikexueyuan.com/course/frame/" cgid="14">开源硬件平台</a></dt>
+									<dd class="cf">
+
+										<a href="//www.jikexueyuan.com/course/cordova/" cgid="68">Arduino</a>
+
+										<a href="//www.jikexueyuan.com/course/reactnative1/" cgid="382">树莓派</a>
+
+										<a href="//www.jikexueyuan.com/course/cordova/" cgid="68">mbed</a>
+
+										<a href="//www.jikexueyuan.com/course/reactnative1/" cgid="382">GoKit</a>
+
+										<a href="//www.jikexueyuan.com/course/cordova/" cgid="68">LeMaker Guitar</a>
+
+									</dd>
+								</dl>
+
+								<dl>
+									<dt><a href="//www.jikexueyuan.com/course/frame/" cgid="14">通信链接技术</a></dt>
+									<dd class="cf">
+
+										<a href="//www.jikexueyuan.com/course/cordova/" cgid="68">无线Wifi</a>
+
+										<a href="//www.jikexueyuan.com/course/reactnative1/" cgid="382">移动通信</a>
+
+										<a href="//www.jikexueyuan.com/course/cordova/" cgid="68">蓝牙</a>
+
+										<a href="//www.jikexueyuan.com/course/reactnative1/" cgid="382">NFC</a>
+
+									</dd>
+								</dl>
+
+								<dl>
+									<dt><a href="//www.jikexueyuan.com/course/frame/" cgid="14">信息感知处理技术</a></dt>
+									<dd class="cf">
+
+										<a href="//www.jikexueyuan.com/course/cordova/" cgid="68">传感器</a>
+
+										<a href="//www.jikexueyuan.com/course/reactnative1/" cgid="382">数据挖掘</a>
+
+									</dd>
+								</dl>
+								<dl>
+									<dt><a href="//www.jikexueyuan.com/course/frame/" cgid="14">人体交互技术</a></dt>
+									<dd class="cf">
+
+										<a href="//www.jikexueyuan.com/course/cordova/" cgid="68">语音识别</a>
+
+										<a href="//www.jikexueyuan.com/course/reactnative1/" cgid="382">人脸识别</a>
+
+										<a href="//www.jikexueyuan.com/course/reactnative1/" cgid="382">手势识别</a>
+
+									</dd>
+								</dl>
+
+							</div>
+
+						</li>
+						<li>
+							<a cgid="7" href="//www.jikexueyuan.com/course/db/">数据库</a>
+						</li>
+						<li>
+							<a cgid="8" href="//www.jikexueyuan.com/course/certificate/">认证考试</a>
+						</li>
+						<li>
+							<a cgid="9" href="//www.jikexueyuan.com/course/enterpriseit/">企业 IT</a>
+							<div class="yidongkaifDiv">
+
+								<dl>
+									<dt><a href="//www.jikexueyuan.com/course/app/" cgid="58">运维管理</a></dt>
+									<dd class="cf">
+
+										<a href="//www.jikexueyuan.com/course/android/" cgid="59">Shell</a>
+
+										<a href="//www.jikexueyuan.com/course/ios/" cgid="60">自动化运维</a>
+
+										<a href="//www.jikexueyuan.com/course/android/" cgid="59">Nginx</a>
+
+										<a href="//www.jikexueyuan.com/course/ios/" cgid="60">Apache</a>
+
+										<a href="//www.jikexueyuan.com/course/android/" cgid="59">运维监控</a>
+
+									</dd>
+								</dl>
+
+								<dl>
+									<dt><a href="//www.jikexueyuan.com/course/games/" cgid="13">商业智能</a></dt>
+									<dd class="cf">
+
+										<a href="//www.jikexueyuan.com/course/cocos/" cgid="63">FileMaker</a>
+
+									</dd>
+								</dl>
+
+								<dl>
+									<dt><a href="//www.jikexueyuan.com/course/frame/" cgid="14">操作系统</a></dt>
+									<dd class="cf">
+
+										<a href="//www.jikexueyuan.com/course/cordova/" cgid="68">Linux</a>
+
+										<a href="//www.jikexueyuan.com/course/reactnative1/" cgid="382">Windows</a>
+
+										<a href="//www.jikexueyuan.com/course/reactnative1/" cgid="382">Mac OS</a>
+
+									</dd>
+								</dl>
+
+								<dl>
+									<dt><a href="//www.jikexueyuan.com/course/frame/" cgid="14">企业服务</a></dt>
+									<dd class="cf">
+
+										<a href="//www.jikexueyuan.com/course/cordova/" cgid="68">B2C</a>
+
+									</dd>
+								</dl>
+
+							</div>
+						</li>
+						<li>
+							<a cgid="11" href="//www.jikexueyuan.com/course/productdesign/">设计&amp;产品&amp;测试</a>
+							<div class="yidongkaifDiv">
+
+								<dl>
+									<dt><a href="//www.jikexueyuan.com/course/app/" cgid="58">设计基础</a></dt>
+									<dd class="cf">
+										<a href="//www.jikexueyuan.com/course/cordova/" cgid="68">PhotoShop</a>
+
+										<a href="//www.jikexueyuan.com/course/reactnative1/" cgid="382">Flash</a>
+
+										<a href="//www.jikexueyuan.com/course/cordova/" cgid="68">Illustrator</a>
+
+										<a href="//www.jikexueyuan.com/course/cordova/" cgid="68">Sketch</a>
+
+									</dd>
+								</dl>
+
+								<dl>
+									<dt><a href="//www.jikexueyuan.com/course/app/" cgid="58">游戏设计</a></dt>
+									<dd class="cf">
+										<a href="//www.jikexueyuan.com/course/cordova/" cgid="68">界面设计</a>
+
+										<a href="//www.jikexueyuan.com/course/reactnative1/" cgid="382">角色设计</a>
+
+									</dd>
+								</dl>
+
+								<dl>
+									<dt><a href="//www.jikexueyuan.com/course/app/" cgid="58">产品经理</a></dt>
+									<dd class="cf">
+										<a href="//www.jikexueyuan.com/course/cordova/" cgid="68">需求分析</a>
+
+										<a href="//www.jikexueyuan.com/course/reactnative1/" cgid="382">Axure</a>
+
+										<a href="//www.jikexueyuan.com/course/reactnative1/" cgid="382">项目实战</a>
+
+									</dd>
+								</dl>
+
+								<dl>
+									<dt><a href="//www.jikexueyuan.com/course/app/" cgid="58">视觉设计</a></dt>
+									<dd class="cf">
+										<a href="//www.jikexueyuan.com/course/cordova/" cgid="68">应用UI设计</a>
+
+										<a href="//www.jikexueyuan.com/course/reactnative1/" cgid="382">网页UI设计</a>
+
+										<a href="//www.jikexueyuan.com/course/reactnative1/" cgid="382">设计理论</a>
+
+										<a href="//www.jikexueyuan.com/course/reactnative1/" cgid="382">图形设计</a>
+									</dd>
+								</dl>
+
+								<dl>
+									<dt><a href="//www.jikexueyuan.com/course/app/" cgid="58">测试工具</a></dt>
+									<dd class="cf">
+										<a href="//www.jikexueyuan.com/course/cordova/" cgid="68">自动化测试</a>
+
+									</dd>
+								</dl>
+
+							</div>
+						</li>
+						<li>
+							<a cgid="400" href="//www.jikexueyuan.com/course/ai/">人工智能</a>
+							<div class="yidongkaifDiv">
+
+								<dl>
+									<dt><a href="//www.jikexueyuan.com/course/app/" cgid="58">微软AI</a></dt>
+									<dd class="cf">
+
+									</dd>
+								</dl>
+
+							</div>
+						</li>
+					</ul>
+
+				</div>
+				<ul class="contentLeftBottom">
+					<li>
+						<a href="//ke.jikexueyuan.com/zhiye/">
+							<i class="icon-zylj"></i>职业路径图
+						</a>
+					</li>
+					<li>
+						<a href="//www.jikexueyuan.com/path/">
+							<i class="icon-zstx"></i>知识体系图
+						</a>
+					</li>
+					<li>
+						<a href="//ke.jikexueyuan.com/xilie/">
+							<i class="icon-xlkc"></i>系列课程
+						</a>
+					</li>
+					<li>
+						<a href="//www.jikexueyuan.com/tag/">
+							<i class="icon-kcbq"></i>课程标签
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="contentMeddle">
+				<div class="contentMeddleTitle">
+					<ul class="contentMeddleTitleLi">
+						<li>全部课程</li>
+						<li class="zuixin">最新<i class="arrow-icon" style="border-color:gainsboro;;"></i>
+							<ul class="zuiXinUl">
+								<li>
+									<a href="//www.jikexueyuan.com/course/all/1-0-0-0/" ref="nofollow">最新</a>
+								</li>
+								<li>
+									<a href="//www.jikexueyuan.com/course/all/2-0-0-0/" ref="nofollow">最热</a>
+								</li>
+							</ul>
+						</li>
+						<li class="kechengLi">课程类型<i class="arrow-icon" style="border-color:gainsboro;;"></i>
+							<ul class="kechengUl">
+								<li>
+									<a href="//www.jikexueyuan.com/course/all/1-0-0-1/" ref="nofollow">VIP</a>
+								</li>
+								<li>
+									<a href="//www.jikexueyuan.com/course/all/1-0-0-2/" ref="nofollow">免费</a>
+								</li>
+								<li>
+									<a href="//www.jikexueyuan.com/course/all/1-0-0-3/" ref="nofollow">认证专享</a>
+								</li>
+								<li>
+									<a href="//www.jikexueyuan.com/course/all/1-0-0-0/" ref="nofollow">全部</a>
+								</li>
+
+							</ul>
+						</li>
+						<li class="neirongLi">内容类型<i class="arrow-icon" style="border-color:gainsboro;"></i>
+							<ul class="neirongUl">
+								<li>
+									<a href="//www.jikexueyuan.com/course/all/1-0-1-0/" ref="nofollow">知识精讲</a>
+								</li>
+								<li>
+									<a href="//www.jikexueyuan.com/course/all/1-0-3-0/" ref="nofollow">项目实战</a>
+								</li>
+								<li>
+									<a href="//www.jikexueyuan.com/course/all/1-0-0-0/" ref="nofollow">全部</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nanduLi">难度类型<i class="arrow-icon"></i>
+							<ul class="nanDuUl">
+								<li>
+									<a href="//www.jikexueyuan.com/course/all/1-1-0-0/" ref="nofollow">初级</a>
+								</li>
+								<li>
+									<a href="//www.jikexueyuan.com/course/all/1-3-0-0/" ref="nofollow">中级</a>
+								</li>
+								<li>
+									<a href="//www.jikexueyuan.com/course/all/1-5-0-0/" ref="nofollow">高级</a>
+								</li>
+								<li>
+									<a href="//www.jikexueyuan.com/course/all/1-0-0-0/" ref="nofollow"> 全部 </a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="contentMeddleTitleRightLi">
+						<li><i class="icon1"></i></li>
+						<li><i class="icon2"></i></li>
+					</ul>
+
+				</div>
+
+				<div class="contentDecribleDiv ">
+					<ul class="contentDecribleUl clearfix">
+						<li>
+							<div class="lessonimg-box">
+								<i class="user-action lesson-shoucang " jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2003&amp;aCId=3224&amp;posColumn=3224.1"></i>
+								<a href="//www.jikexueyuan.com/course/3224.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3224&amp;posColumn=3224.1">
+									<img src="https://a1.jikexueyuan.com/home/201612/12/1b6a/584e070d8c2cb.jpeg" class="lessonimg" title="腾讯云产品 - 游戏云" alt="腾讯云产品 - 游戏云">
+
+									<div class="lessonplay">
+										<i class="playericon" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3224&amp;posColumn=3224.1"></i>
+									</div>
+								</a>
+							</div>
+
+							<div class="lesson-infor">
+								<a class="childA" chref="//www.jikexueyuan.com/course/3224.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3224&amp;posColumn=3224.1">腾讯云产品 - 游戏云</a>
+								<p class="childP">
+									微软 Azure 云平台提供了丰服务，基于这些服务和公有云强大的扩展能力。
+								</p>
+							</div>
+							<div class="timeandicon">
+								<i class="time-icon"></i><em>5课时177分钟</em><em class="learn-number">6089人学习</em>
+								<br/><i class="xinhao-icon2"></i><em>中级</em>
+							</div>
+
+						</li>
+						<li>
+							<div class="lessonimg-box">
+								<i class="user-action lesson-shoucang " jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2003&amp;aCId=3224&amp;posColumn=3224.1"></i>
+								<a href="//www.jikexueyuan.com/course/3224.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3224&amp;posColumn=3224.1">
+									<img src="https://a1.jikexueyuan.com/home/201612/12/1b6a/584e070d8c2cb.jpeg" class="lessonimg" title="腾讯云产品 - 游戏云" alt="腾讯云产品 - 游戏云">
+
+									<div class="lessonplay">
+										<i class="playericon" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3224&amp;posColumn=3224.1"></i>
+									</div>
+								</a>
+							</div>
+
+							<div class="lesson-infor">
+								<a class="childA" chref="//www.jikexueyuan.com/course/3224.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3224&amp;posColumn=3224.1">腾讯云产品 - 游戏云</a>
+								<p class="childP">
+									微软 Azure 云平台提供了丰服务，基于这些服务和公有云强大的扩展能力。
+								</p>
+							</div>
+							<div class="timeandicon">
+								<i class="time-icon"></i><em>5课时177分钟</em><em class="learn-number">6089人学习</em>
+								<br/><i class="xinhao-icon2"></i><em>中级</em>
+							</div>
+
+						</li>
+						<li>
+							<div class="lessonimg-box">
+								<i class="user-action lesson-shoucang " jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2003&amp;aCId=3224&amp;posColumn=3224.1"></i>
+								<a href="//www.jikexueyuan.com/course/3224.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3224&amp;posColumn=3224.1">
+									<img src="https://a1.jikexueyuan.com/home/201612/12/1b6a/584e070d8c2cb.jpeg" class="lessonimg" title="腾讯云产品 - 游戏云" alt="腾讯云产品 - 游戏云">
+
+									<div class="lessonplay">
+										<i class="playericon" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3224&amp;posColumn=3224.1"></i>
+									</div>
+								</a>
+							</div>
+
+							<div class="lesson-infor">
+								<a class="childA" chref="//www.jikexueyuan.com/course/3224.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3224&amp;posColumn=3224.1">腾讯云产品 - 游戏云</a>
+								<p class="childP">
+									微软 Azure 云平台提供了丰服务，基于这些服务和公有云强大的扩展能力。
+								</p>
+							</div>
+							<div class="timeandicon">
+								<i class="time-icon"></i><em>5课时177分钟</em><em class="learn-number">6089人学习</em>
+								<br/><i class="xinhao-icon2"></i><em>中级</em>
+							</div>
+
+						</li>
+						<li>
+							<div class="lessonimg-box">
+								<i class="user-action lesson-shoucang " jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2003&amp;aCId=3224&amp;posColumn=3224.1"></i>
+								<a href="//www.jikexueyuan.com/course/3224.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3224&amp;posColumn=3224.1">
+									<img src="https://a1.jikexueyuan.com/home/201612/12/1b6a/584e070d8c2cb.jpeg" class="lessonimg" title="腾讯云产品 - 游戏云" alt="腾讯云产品 - 游戏云">
+
+									<div class="lessonplay">
+										<i class="playericon" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3224&amp;posColumn=3224.1"></i>
+									</div>
+								</a>
+							</div>
+
+							<div class="lesson-infor">
+								<a class="childA" chref="//www.jikexueyuan.com/course/3224.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3224&amp;posColumn=3224.1">腾讯云产品 - 游戏云</a>
+								<p class="childP">
+									微软 Azure 云平台提供了丰服务，基于这些服务和公有云强大的扩展能力。
+								</p>
+							</div>
+							<div class="timeandicon">
+								<i class="time-icon"></i><em>5课时177分钟</em><em class="learn-number">6089人学习</em>
+								<br/><i class="xinhao-icon2"></i><em>中级</em>
+							</div>
+
+						</li>
+						<li>
+							<div class="lessonimg-box">
+								<i class="user-action lesson-shoucang " jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2003&amp;aCId=3224&amp;posColumn=3224.1"></i>
+								<a href="//www.jikexueyuan.com/course/3224.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3224&amp;posColumn=3224.1">
+									<img src="https://a1.jikexueyuan.com/home/201612/12/1b6a/584e070d8c2cb.jpeg" class="lessonimg" title="腾讯云产品 - 游戏云" alt="腾讯云产品 - 游戏云">
+
+									<div class="lessonplay">
+										<i class="playericon" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3224&amp;posColumn=3224.1"></i>
+									</div>
+								</a>
+							</div>
+
+							<div class="lesson-infor">
+								<a class="childA" chref="//www.jikexueyuan.com/course/3224.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3224&amp;posColumn=3224.1">腾讯云产品 - 游戏云</a>
+								<p class="childP">
+									微软 Azure 云平台提供了丰服务，基于这些服务和公有云强大的扩展能力。
+								</p>
+							</div>
+							<div class="timeandicon">
+								<i class="time-icon"></i><em>5课时177分钟</em><em class="learn-number">6089人学习</em>
+								<br/><i class="xinhao-icon2"></i><em>中级</em>
+							</div>
+
+						</li>
+						<li>
+							<div class="lessonimg-box">
+								<i class="user-action lesson-shoucang " jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2003&amp;aCId=3224&amp;posColumn=3224.1"></i>
+								<a href="//www.jikexueyuan.com/course/3224.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3224&amp;posColumn=3224.1">
+									<img src="https://a1.jikexueyuan.com/home/201612/12/1b6a/584e070d8c2cb.jpeg" class="lessonimg" title="腾讯云产品 - 游戏云" alt="腾讯云产品 - 游戏云">
+
+									<div class="lessonplay">
+										<i class="playericon" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3224&amp;posColumn=3224.1"></i>
+									</div>
+								</a>
+							</div>
+
+							<div class="lesson-infor">
+								<a class="childA" chref="//www.jikexueyuan.com/course/3224.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3224&amp;posColumn=3224.1">腾讯云产品 - 游戏云</a>
+								<p class="childP">
+									微软 Azure 云平台提供了丰服务，基于这些服务和公有云强大的扩展能力。
+								</p>
+							</div>
+							<div class="timeandicon">
+								<i class="time-icon"></i><em>5课时177分钟</em><em class="learn-number">6089人学习</em>
+								<br/><i class="xinhao-icon2"></i><em>中级</em>
+							</div>
+
+						</li>
+						<li>
+							<div class="lessonimg-box">
+								<i class="user-action lesson-shoucang " jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2003&amp;aCId=3224&amp;posColumn=3224.1"></i>
+								<a href="//www.jikexueyuan.com/course/3224.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3224&amp;posColumn=3224.1">
+									<img src="https://a1.jikexueyuan.com/home/201612/12/1b6a/584e070d8c2cb.jpeg" class="lessonimg" title="腾讯云产品 - 游戏云" alt="腾讯云产品 - 游戏云">
+
+									<div class="lessonplay">
+										<i class="playericon" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3224&amp;posColumn=3224.1"></i>
+									</div>
+								</a>
+							</div>
+
+							<div class="lesson-infor">
+								<a class="childA" chref="//www.jikexueyuan.com/course/3224.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3224&amp;posColumn=3224.1">腾讯云产品 - 游戏云</a>
+								<p class="childP">
+									微软 Azure 云平台提供了丰服务，基于这些服务和公有云强大的扩展能力。
+								</p>
+							</div>
+							<div class="timeandicon">
+								<i class="time-icon"></i><em>5课时177分钟</em><em class="learn-number">6089人学习</em>
+								<br/><i class="xinhao-icon2"></i><em>中级</em>
+							</div>
+
+						</li>
+						<li>
+							<div class="lessonimg-box">
+								<i class="user-action lesson-shoucang " jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2003&amp;aCId=3224&amp;posColumn=3224.1"></i>
+								<a href="//www.jikexueyuan.com/course/3224.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3224&amp;posColumn=3224.1">
+									<img src="https://a1.jikexueyuan.com/home/201612/12/1b6a/584e070d8c2cb.jpeg" class="lessonimg" title="腾讯云产品 - 游戏云" alt="腾讯云产品 - 游戏云">
+
+									<div class="lessonplay">
+										<i class="playericon" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3224&amp;posColumn=3224.1"></i>
+									</div>
+								</a>
+							</div>
+
+							<div class="lesson-infor">
+								<a class="childA" chref="//www.jikexueyuan.com/course/3224.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3224&amp;posColumn=3224.1">腾讯云产品 - 游戏云</a>
+								<p class="childP">
+									微软 Azure 云平台提供了丰服务，基于这些服务和公有云强大的扩展能力。
+								</p>
+							</div>
+							<div class="timeandicon">
+								<i class="time-icon"></i><em>5课时177分钟</em><em class="learn-number">6089人学习</em>
+								<br/><i class="xinhao-icon2"></i><em>中级</em>
+							</div>
+
+						</li>
+						<li>
+							<div class="lessonimg-box">
+								<i class="user-action lesson-shoucang " jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2003&amp;aCId=3224&amp;posColumn=3224.1"></i>
+								<a href="//www.jikexueyuan.com/course/3224.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3224&amp;posColumn=3224.1">
+									<img src="https://a1.jikexueyuan.com/home/201612/12/1b6a/584e070d8c2cb.jpeg" class="lessonimg" title="腾讯云产品 - 游戏云" alt="腾讯云产品 - 游戏云">
+
+									<div class="lessonplay">
+										<i class="playericon" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3224&amp;posColumn=3224.1"></i>
+									</div>
+								</a>
+							</div>
+
+							<div class="lesson-infor">
+								<a class="childA" chref="//www.jikexueyuan.com/course/3224.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3224&amp;posColumn=3224.1">腾讯云产品 - 游戏云</a>
+								<p class="childP">
+									微软 Azure 云平台提供了丰服务，基于这些服务和公有云强大的扩展能力。
+								</p>
+							</div>
+							<div class="timeandicon">
+								<i class="time-icon"></i><em>5课时177分钟</em><em class="learn-number">6089人学习</em>
+								<br/><i class="xinhao-icon2"></i><em>中级</em>
+							</div>
+
+						</li>
+						<li>
+							<div class="lessonimg-box">
+								<i class="user-action lesson-shoucang " jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2003&amp;aCId=3224&amp;posColumn=3224.1"></i>
+								<a href="//www.jikexueyuan.com/course/3224.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3224&amp;posColumn=3224.1">
+									<img src="https://a1.jikexueyuan.com/home/201612/12/1b6a/584e070d8c2cb.jpeg" class="lessonimg" title="腾讯云产品 - 游戏云" alt="腾讯云产品 - 游戏云">
+
+									<div class="lessonplay">
+										<i class="playericon" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3224&amp;posColumn=3224.1"></i>
+									</div>
+								</a>
+							</div>
+
+							<div class="lesson-infor">
+								<a class="childA" chref="//www.jikexueyuan.com/course/3224.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3224&amp;posColumn=3224.1">腾讯云产品 - 游戏云</a>
+								<p class="childP">
+									微软 Azure 云平台提供了丰服务，基于这些服务和公有云强大的扩展能力。
+								</p>
+							</div>
+							<div class="timeandicon">
+								<i class="time-icon"></i><em>5课时177分钟</em><em class="learn-number">6089人学习</em>
+								<br/><i class="xinhao-icon2"></i><em>中级</em>
+							</div>
+
+						</li>
+						<li>
+							<div class="lessonimg-box">
+								<i class="user-action lesson-shoucang " jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2003&amp;aCId=3224&amp;posColumn=3224.1"></i>
+								<a href="//www.jikexueyuan.com/course/3224.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3224&amp;posColumn=3224.1">
+									<img src="https://a1.jikexueyuan.com/home/201612/12/1b6a/584e070d8c2cb.jpeg" class="lessonimg" title="腾讯云产品 - 游戏云" alt="腾讯云产品 - 游戏云">
+
+									<div class="lessonplay">
+										<i class="playericon" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3224&amp;posColumn=3224.1"></i>
+									</div>
+								</a>
+							</div>
+
+							<div class="lesson-infor">
+								<a class="childA" chref="//www.jikexueyuan.com/course/3224.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3224&amp;posColumn=3224.1">腾讯云产品 - 游戏云</a>
+								<p class="childP">
+									微软 Azure 云平台提供了丰服务，基于这些服务和公有云强大的扩展能力。
+								</p>
+							</div>
+							<div class="timeandicon">
+								<i class="time-icon"></i><em>5课时177分钟</em><em class="learn-number">6089人学习</em>
+								<br/><i class="xinhao-icon2"></i><em>中级</em>
+							</div>
+
+						</li>
+						<li>
+							<div class="lessonimg-box">
+								<i class="user-action lesson-shoucang " jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2003&amp;aCId=3224&amp;posColumn=3224.1"></i>
+								<a href="//www.jikexueyuan.com/course/3224.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3224&amp;posColumn=3224.1">
+									<img src="https://a1.jikexueyuan.com/home/201612/12/1b6a/584e070d8c2cb.jpeg" class="lessonimg" title="腾讯云产品 - 游戏云" alt="腾讯云产品 - 游戏云">
+
+									<div class="lessonplay">
+										<i class="playericon" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3224&amp;posColumn=3224.1"></i>
+									</div>
+								</a>
+							</div>
+
+							<div class="lesson-infor">
+								<a class="childA" chref="//www.jikexueyuan.com/course/3224.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3224&amp;posColumn=3224.1">腾讯云产品 - 游戏云</a>
+								<p class="childP">
+									微软 Azure 云平台提供了丰服务，基于这些服务和公有云强大的扩展能力。
+								</p>
+							</div>
+							<div class="timeandicon">
+								<i class="time-icon"></i><em>5课时177分钟</em><em class="learn-number">6089人学习</em>
+								<br/><i class="xinhao-icon2"></i><em>中级</em>
+							</div>
+
+						</li>
+						<li>
+							<div class="lessonimg-box">
+								<i class="user-action lesson-shoucang " jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2003&amp;aCId=3224&amp;posColumn=3224.1"></i>
+								<a href="//www.jikexueyuan.com/course/3224.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3224&amp;posColumn=3224.1">
+									<img src="https://a1.jikexueyuan.com/home/201612/12/1b6a/584e070d8c2cb.jpeg" class="lessonimg" title="腾讯云产品 - 游戏云" alt="腾讯云产品 - 游戏云">
+
+									<div class="lessonplay">
+										<i class="playericon" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3224&amp;posColumn=3224.1"></i>
+									</div>
+								</a>
+							</div>
+
+							<div class="lesson-infor">
+								<a class="childA" chref="//www.jikexueyuan.com/course/3224.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3224&amp;posColumn=3224.1">腾讯云产品 - 游戏云</a>
+								<p class="childP">
+									微软 Azure 云平台提供了丰服务，基于这些服务和公有云强大的扩展能力。
+								</p>
+							</div>
+							<div class="timeandicon">
+								<i class="time-icon"></i><em>5课时177分钟</em><em class="learn-number">6089人学习</em>
+								<br/><i class="xinhao-icon2"></i><em>中级</em>
+							</div>
+
+						</li>
+						<li>
+							<div class="lessonimg-box">
+								<i class="user-action lesson-shoucang " jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2003&amp;aCId=3224&amp;posColumn=3224.1"></i>
+								<a href="//www.jikexueyuan.com/course/3224.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3224&amp;posColumn=3224.1">
+									<img src="https://a1.jikexueyuan.com/home/201612/12/1b6a/584e070d8c2cb.jpeg" class="lessonimg" title="腾讯云产品 - 游戏云" alt="腾讯云产品 - 游戏云">
+
+									<div class="lessonplay">
+										<i class="playericon" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3224&amp;posColumn=3224.1"></i>
+									</div>
+								</a>
+							</div>
+
+							<div class="lesson-infor">
+								<a class="childA" chref="//www.jikexueyuan.com/course/3224.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3224&amp;posColumn=3224.1">腾讯云产品 - 游戏云</a>
+								<p class="childP">
+									微软 Azure 云平台提供了丰服务，基于这些服务和公有云强大的扩展能力。
+								</p>
+							</div>
+							<div class="timeandicon">
+								<i class="time-icon"></i><em>5课时177分钟</em><em class="learn-number">6089人学习</em>
+								<br/><i class="xinhao-icon2"></i><em>中级</em>
+							</div>
+
+						</li>
+						<li>
+							<div class="lessonimg-box">
+								<i class="user-action lesson-shoucang " jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2003&amp;aCId=3224&amp;posColumn=3224.1"></i>
+								<a href="//www.jikexueyuan.com/course/3224.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3224&amp;posColumn=3224.1">
+									<img src="https://a1.jikexueyuan.com/home/201612/12/1b6a/584e070d8c2cb.jpeg" class="lessonimg" title="腾讯云产品 - 游戏云" alt="腾讯云产品 - 游戏云">
+
+									<div class="lessonplay">
+										<i class="playericon" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3224&amp;posColumn=3224.1"></i>
+									</div>
+								</a>
+							</div>
+
+							<div class="lesson-infor">
+								<a class="childA" chref="//www.jikexueyuan.com/course/3224.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3224&amp;posColumn=3224.1">腾讯云产品 - 游戏云</a>
+								<p class="childP">
+									微软 Azure 云平台提供了丰服务，基于这些服务和公有云强大的扩展能力。
+								</p>
+							</div>
+							<div class="timeandicon">
+								<i class="time-icon"></i><em>5课时177分钟</em><em class="learn-number">6089人学习</em>
+								<br/><i class="xinhao-icon2"></i><em>中级</em>
+							</div>
+
+						</li>
+						<li>
+							<div class="lessonimg-box">
+								<i class="user-action lesson-shoucang " jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2003&amp;aCId=3224&amp;posColumn=3224.1"></i>
+								<a href="//www.jikexueyuan.com/course/3224.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3224&amp;posColumn=3224.1">
+									<img src="https://a1.jikexueyuan.com/home/201612/12/1b6a/584e070d8c2cb.jpeg" class="lessonimg" title="腾讯云产品 - 游戏云" alt="腾讯云产品 - 游戏云">
+
+									<div class="lessonplay">
+										<i class="playericon" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3224&amp;posColumn=3224.1"></i>
+									</div>
+								</a>
+							</div>
+
+							<div class="lesson-infor">
+								<a class="childA" chref="//www.jikexueyuan.com/course/3224.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3224&amp;posColumn=3224.1">腾讯云产品 - 游戏云</a>
+								<p class="childP">
+									微软 Azure 云平台提供了丰服务，基于这些服务和公有云强大的扩展能力。
+								</p>
+							</div>
+							<div class="timeandicon">
+								<i class="time-icon"></i><em>5课时177分钟</em><em class="learn-number">6089人学习</em>
+								<br/><i class="xinhao-icon2"></i><em>中级</em>
+							</div>
+
+						</li>
+						<li>
+							<div class="lessonimg-box">
+								<i class="user-action lesson-shoucang " jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2003&amp;aCId=3224&amp;posColumn=3224.1"></i>
+								<a href="//www.jikexueyuan.com/course/3224.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3224&amp;posColumn=3224.1">
+									<img src="https://a1.jikexueyuan.com/home/201612/12/1b6a/584e070d8c2cb.jpeg" class="lessonimg" title="腾讯云产品 - 游戏云" alt="腾讯云产品 - 游戏云">
+
+									<div class="lessonplay">
+										<i class="playericon" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3224&amp;posColumn=3224.1"></i>
+									</div>
+								</a>
+							</div>
+
+							<div class="lesson-infor">
+								<a class="childA" chref="//www.jikexueyuan.com/course/3224.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3224&amp;posColumn=3224.1">腾讯云产品 - 游戏云</a>
+								<p class="childP">
+									微软 Azure 云平台提供了丰服务，基于这些服务和公有云强大的扩展能力。
+								</p>
+							</div>
+							<div class="timeandicon">
+								<i class="time-icon"></i><em>5课时177分钟</em><em class="learn-number">6089人学习</em>
+								<br/><i class="xinhao-icon2"></i><em>中级</em>
+							</div>
+
+						</li>
+						<li>
+							<div class="lessonimg-box">
+								<i class="user-action lesson-shoucang " jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2003&amp;aCId=3224&amp;posColumn=3224.1"></i>
+								<a href="//www.jikexueyuan.com/course/3224.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3224&amp;posColumn=3224.1">
+									<img src="https://a1.jikexueyuan.com/home/201612/12/1b6a/584e070d8c2cb.jpeg" class="lessonimg" title="腾讯云产品 - 游戏云" alt="腾讯云产品 - 游戏云">
+
+									<div class="lessonplay">
+										<i class="playericon" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3224&amp;posColumn=3224.1"></i>
+									</div>
+								</a>
+							</div>
+
+							<div class="lesson-infor">
+								<a class="childA" chref="//www.jikexueyuan.com/course/3224.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3224&amp;posColumn=3224.1">腾讯云产品 - 游戏云</a>
+								<p class="childP">
+									微软 Azure 云平台提供了丰服务，基于这些服务和公有云强大的扩展能力。
+								</p>
+							</div>
+							<div class="timeandicon">
+								<i class="time-icon"></i><em>5课时177分钟</em><em class="learn-number">6089人学习</em>
+								<br/><i class="xinhao-icon2"></i><em>中级</em>
+							</div>
+
+						</li>
+
+					</ul>
+				</div>
+
+				<div class="contentone contentGone">
+					<ul class="contentHorizon">
+						<li>
+							<div class="contentHorizonDivone">
+
+								<i class="user-action lesson-shoucang " style="display: none;"></i>
+
+								<a href="//www.jikexueyuan.com/course/3647.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3647&amp;posColumn=3647.1">
+									<img src="https://a1.jikexueyuan.com/home/201706/12/c903/593e4d5f679db.jpg" class="lessonimghorizon" title="微软人工智能 － 数据分析平台" alt="微软人工智能 － 数据分析平台">
+
+									<div class="lessonplay" style="opacity: 0;">
+										<i class="playericon" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3647&amp;posColumn=3647.1"></i>
+									</div>
+
+								</a>
+
+							</div>
+
+							<div class="lesson-infor" style="height: 88px;">
+								<h2 class="lesson-info-h2"><a href="//www.jikexueyuan.com/course/3647.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3647&amp;posColumn=3647.1">微软人工智能 － 数据分析平台</a></h2>
+								<p style="height: 36px;  display: block;">
+									随着移动互联网、物联网技术的发展，企业将有能力收集到越来越多的数据，数据的统计、分析甚至是机器学习成为如今最热门的话题。为了满足飞速累积的数据和日益增长的需求，数据分析人员对便捷的机器学习训练工具、高度自管理化的大数据分析平台有着强烈的渴望。
+
+								</p>
+								<div class="timeandicon">
+									<div class="cf">
+										<dl>
+											<dd class="mar-b8"><i class="time-icon"></i><em>3课时
+							122分钟</em>
+											</dd>
+											<dd class="zhongji" style="display: block;">
+
+												<i class="xinhao-icon2"></i><em>中级</em>
+											</dd>
+
+										</dl>
+										<em class="learn-number" style="display: inline;">1050人学习</em>
+									</div>
+									<div class="cf">
+										<div class="lessonicon-box">
+
+											<a href="//www.jikexueyuan.com/course/microsoftai/">
+												<img src="https://a1.jikexueyuan.com/home/201706/07/18ee/5937ceef77561.png" alt="microsoftai" title="微软AI" jktag="&amp;posGP=101001&amp;posArea=0002&amp;posOper=2005&amp;aCId=3647&amp;posColumn=3647.1&amp;aCCate=microsoftai" width="16">
+											</a>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="contentHorizonDivone">
+
+								<i class="user-action lesson-shoucang " style="display: none;"></i>
+
+								<a href="//www.jikexueyuan.com/course/3647.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3647&amp;posColumn=3647.1">
+									<img src="https://a1.jikexueyuan.com/home/201706/12/c903/593e4d5f679db.jpg" class="lessonimghorizon" title="微软人工智能 － 数据分析平台" alt="微软人工智能 － 数据分析平台">
+
+									<div class="lessonplay" style="opacity: 0;">
+										<i class="playericon" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3647&amp;posColumn=3647.1"></i>
+									</div>
+
+								</a>
+
+							</div>
+
+							<div class="lesson-infor" style="height: 88px;">
+								<h2 class="lesson-info-h2"><a href="//www.jikexueyuan.com/course/3647.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3647&amp;posColumn=3647.1">微软人工智能 － 数据分析平台</a></h2>
+								<p style="height: 36px;  display: block;">
+									随着移动互联网、物联网技术的发展，企业将有能力收集到越来越多的数据，数据的统计、分析甚至是机器学习成为如今最热门的话题。为了满足飞速累积的数据和日益增长的需求，数据分析人员对便捷的机器学习训练工具、高度自管理化的大数据分析平台有着强烈的渴望。
+
+								</p>
+								<div class="timeandicon">
+									<div class="cf">
+										<dl>
+											<dd class="mar-b8"><i class="time-icon"></i><em>3课时
+							122分钟</em>
+											</dd>
+											<dd class="zhongji" style="display: block;">
+
+												<i class="xinhao-icon2"></i><em>中级</em>
+											</dd>
+
+										</dl>
+										<em class="learn-number" style="display: inline;">1050人学习</em>
+									</div>
+									<div class="cf">
+										<div class="lessonicon-box">
+
+											<a href="//www.jikexueyuan.com/course/microsoftai/">
+												<img src="https://a1.jikexueyuan.com/home/201706/07/18ee/5937ceef77561.png" alt="microsoftai" title="微软AI" jktag="&amp;posGP=101001&amp;posArea=0002&amp;posOper=2005&amp;aCId=3647&amp;posColumn=3647.1&amp;aCCate=microsoftai" width="16">
+											</a>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="contentHorizonDivone">
+
+								<i class="user-action lesson-shoucang " style="display: none;"></i>
+
+								<a href="//www.jikexueyuan.com/course/3647.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3647&amp;posColumn=3647.1">
+									<img src="https://a1.jikexueyuan.com/home/201706/12/c903/593e4d5f679db.jpg" class="lessonimghorizon" title="微软人工智能 － 数据分析平台" alt="微软人工智能 － 数据分析平台">
+
+									<div class="lessonplay" style="opacity: 0;">
+										<i class="playericon" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3647&amp;posColumn=3647.1"></i>
+									</div>
+
+								</a>
+
+							</div>
+
+							<div class="lesson-infor" style="height: 88px;">
+								<h2 class="lesson-info-h2"><a href="//www.jikexueyuan.com/course/3647.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3647&amp;posColumn=3647.1">微软人工智能 － 数据分析平台</a></h2>
+								<p style="height: 36px;  display: block;">
+									随着移动互联网、物联网技术的发展，企业将有能力收集到越来越多的数据，数据的统计、分析甚至是机器学习成为如今最热门的话题。为了满足飞速累积的数据和日益增长的需求，数据分析人员对便捷的机器学习训练工具、高度自管理化的大数据分析平台有着强烈的渴望。
+
+								</p>
+								<div class="timeandicon">
+									<div class="cf">
+										<dl>
+											<dd class="mar-b8"><i class="time-icon"></i><em>3课时
+							122分钟</em>
+											</dd>
+											<dd class="zhongji" style="display: block;">
+
+												<i class="xinhao-icon2"></i><em>中级</em>
+											</dd>
+
+										</dl>
+										<em class="learn-number" style="display: inline;">1050人学习</em>
+									</div>
+									<div class="cf">
+										<div class="lessonicon-box">
+
+											<a href="//www.jikexueyuan.com/course/microsoftai/">
+												<img src="https://a1.jikexueyuan.com/home/201706/07/18ee/5937ceef77561.png" alt="microsoftai" title="微软AI" jktag="&amp;posGP=101001&amp;posArea=0002&amp;posOper=2005&amp;aCId=3647&amp;posColumn=3647.1&amp;aCCate=microsoftai" width="16">
+											</a>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="contentHorizonDivone">
+
+								<i class="user-action lesson-shoucang " style="display: none;"></i>
+
+								<a href="//www.jikexueyuan.com/course/3647.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3647&amp;posColumn=3647.1">
+									<img src="https://a1.jikexueyuan.com/home/201706/12/c903/593e4d5f679db.jpg" class="lessonimghorizon" title="微软人工智能 － 数据分析平台" alt="微软人工智能 － 数据分析平台">
+
+									<div class="lessonplay" style="opacity: 0;">
+										<i class="playericon" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3647&amp;posColumn=3647.1"></i>
+									</div>
+
+								</a>
+
+							</div>
+
+							<div class="lesson-infor" style="height: 88px;">
+								<h2 class="lesson-info-h2"><a href="//www.jikexueyuan.com/course/3647.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3647&amp;posColumn=3647.1">微软人工智能 － 数据分析平台</a></h2>
+								<p style="height: 36px;  display: block;">
+									随着移动互联网、物联网技术的发展，企业将有能力收集到越来越多的数据，数据的统计、分析甚至是机器学习成为如今最热门的话题。为了满足飞速累积的数据和日益增长的需求，数据分析人员对便捷的机器学习训练工具、高度自管理化的大数据分析平台有着强烈的渴望。
+
+								</p>
+								<div class="timeandicon">
+									<div class="cf">
+										<dl>
+											<dd class="mar-b8"><i class="time-icon"></i><em>3课时
+							122分钟</em>
+											</dd>
+											<dd class="zhongji" style="display: block;">
+
+												<i class="xinhao-icon2"></i><em>中级</em>
+											</dd>
+
+										</dl>
+										<em class="learn-number" style="display: inline;">1050人学习</em>
+									</div>
+									<div class="cf">
+										<div class="lessonicon-box">
+
+											<a href="//www.jikexueyuan.com/course/microsoftai/">
+												<img src="https://a1.jikexueyuan.com/home/201706/07/18ee/5937ceef77561.png" alt="microsoftai" title="微软AI" jktag="&amp;posGP=101001&amp;posArea=0002&amp;posOper=2005&amp;aCId=3647&amp;posColumn=3647.1&amp;aCCate=microsoftai" width="16">
+											</a>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="contentHorizonDivone">
+
+								<i class="user-action lesson-shoucang " style="display: none;"></i>
+
+								<a href="//www.jikexueyuan.com/course/3647.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3647&amp;posColumn=3647.1">
+									<img src="https://a1.jikexueyuan.com/home/201706/12/c903/593e4d5f679db.jpg" class="lessonimghorizon" title="微软人工智能 － 数据分析平台" alt="微软人工智能 － 数据分析平台">
+
+									<div class="lessonplay" style="opacity: 0;">
+										<i class="playericon" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3647&amp;posColumn=3647.1"></i>
+									</div>
+
+								</a>
+
+							</div>
+
+							<div class="lesson-infor" style="height: 88px;">
+								<h2 class="lesson-info-h2"><a href="//www.jikexueyuan.com/course/3647.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3647&amp;posColumn=3647.1">微软人工智能 － 数据分析平台</a></h2>
+								<p style="height: 36px;  display: block;">
+									随着移动互联网、物联网技术的发展，企业将有能力收集到越来越多的数据，数据的统计、分析甚至是机器学习成为如今最热门的话题。为了满足飞速累积的数据和日益增长的需求，数据分析人员对便捷的机器学习训练工具、高度自管理化的大数据分析平台有着强烈的渴望。
+
+								</p>
+								<div class="timeandicon">
+									<div class="cf">
+										<dl>
+											<dd class="mar-b8"><i class="time-icon"></i><em>3课时122分钟</em>
+											</dd>
+											<dd class="zhongji" style="display: block;">
+
+												<i class="xinhao-icon2"></i><em>中级</em>
+											</dd>
+
+										</dl>
+
+									</div>
+
+									<em class="learn-number" style="display: inline;">1050人学习</em>
+									<div class="cf">
+										<div class="lessonicon-box">
+
+											<a href="//www.jikexueyuan.com/course/microsoftai/">
+												<img src="https://a1.jikexueyuan.com/home/201706/07/18ee/5937ceef77561.png" alt="microsoftai" title="微软AI" jktag="&amp;posGP=101001&amp;posArea=0002&amp;posOper=2005&amp;aCId=3647&amp;posColumn=3647.1&amp;aCCate=microsoftai" width="16">
+											</a>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="contentHorizonDivone">
+
+								<i class="user-action lesson-shoucang " style="display: none;"></i>
+
+								<a href="//www.jikexueyuan.com/course/3647.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3647&amp;posColumn=3647.1">
+									<img src="https://a1.jikexueyuan.com/home/201706/12/c903/593e4d5f679db.jpg" class="lessonimghorizon" title="微软人工智能 － 数据分析平台" alt="微软人工智能 － 数据分析平台">
+
+									<div class="lessonplay" style="opacity: 0;">
+										<i class="playericon" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3647&amp;posColumn=3647.1"></i>
+									</div>
+
+								</a>
+
+							</div>
+
+							<div class="lesson-infor" style="height: 88px;">
+								<h2 class="lesson-info-h2"><a href="//www.jikexueyuan.com/course/3647.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3647&amp;posColumn=3647.1">微软人工智能 － 数据分析平台</a></h2>
+								<p style="height: 36px;  display: block;">
+									随着移动互联网、物联网技术的发展，企业将有能力收集到越来越多的数据，数据的统计、分析甚至是机器学习成为如今最热门的话题。为了满足飞速累积的数据和日益增长的需求，数据分析人员对便捷的机器学习训练工具、高度自管理化的大数据分析平台有着强烈的渴望。
+
+								</p>
+								<div class="timeandicon">
+									<div class="cf">
+										<dl>
+											<dd class="mar-b8"><i class="time-icon"></i><em>3课时
+							122分钟</em>
+											</dd>
+											<dd class="zhongji" style="display: block;">
+
+												<i class="xinhao-icon2"></i><em>中级</em>
+											</dd>
+
+										</dl>
+										<em class="learn-number" style="display: inline;">1050人学习</em>
+									</div>
+									<div class="cf">
+										<div class="lessonicon-box">
+
+											<a href="//www.jikexueyuan.com/course/microsoftai/">
+												<img src="https://a1.jikexueyuan.com/home/201706/07/18ee/5937ceef77561.png" alt="microsoftai" title="微软AI" jktag="&amp;posGP=101001&amp;posArea=0002&amp;posOper=2005&amp;aCId=3647&amp;posColumn=3647.1&amp;aCCate=microsoftai" width="16">
+											</a>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="contentHorizonDivone">
+
+								<i class="user-action lesson-shoucang " style="display: none;"></i>
+
+								<a href="//www.jikexueyuan.com/course/3647.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3647&amp;posColumn=3647.1">
+									<img src="https://a1.jikexueyuan.com/home/201706/12/c903/593e4d5f679db.jpg" class="lessonimghorizon" title="微软人工智能 － 数据分析平台" alt="微软人工智能 － 数据分析平台">
+
+									<div class="lessonplay" style="opacity: 0;">
+										<i class="playericon" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3647&amp;posColumn=3647.1"></i>
+									</div>
+
+								</a>
+
+							</div>
+
+							<div class="lesson-infor" style="height: 88px;">
+								<h2 class="lesson-info-h2"><a href="//www.jikexueyuan.com/course/3647.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3647&amp;posColumn=3647.1">微软人工智能 － 数据分析平台</a></h2>
+								<p style="height: 36px;  display: block;">
+									随着移动互联网、物联网技术的发展，企业将有能力收集到越来越多的数据，数据的统计、分析甚至是机器学习成为如今最热门的话题。为了满足飞速累积的数据和日益增长的需求，数据分析人员对便捷的机器学习训练工具、高度自管理化的大数据分析平台有着强烈的渴望。
+
+								</p>
+								<div class="timeandicon">
+									<div class="cf">
+										<dl>
+											<dd class="mar-b8"><i class="time-icon"></i><em>3课时
+							122分钟</em>
+											</dd>
+											<dd class="zhongji" style="display: block;">
+
+												<i class="xinhao-icon2"></i><em>中级</em>
+											</dd>
+
+										</dl>
+										<em class="learn-number" style="display: inline;">1050人学习</em>
+									</div>
+									<div class="cf">
+										<div class="lessonicon-box">
+
+											<a href="//www.jikexueyuan.com/course/microsoftai/">
+												<img src="https://a1.jikexueyuan.com/home/201706/07/18ee/5937ceef77561.png" alt="microsoftai" title="微软AI" jktag="&amp;posGP=101001&amp;posArea=0002&amp;posOper=2005&amp;aCId=3647&amp;posColumn=3647.1&amp;aCCate=microsoftai" width="16">
+											</a>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="contentHorizonDivone">
+
+								<i class="user-action lesson-shoucang " style="display: none;"></i>
+
+								<a href="//www.jikexueyuan.com/course/3647.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3647&amp;posColumn=3647.1">
+									<img src="https://a1.jikexueyuan.com/home/201706/12/c903/593e4d5f679db.jpg" class="lessonimghorizon" title="微软人工智能 － 数据分析平台" alt="微软人工智能 － 数据分析平台">
+
+									<div class="lessonplay" style="opacity: 0;">
+										<i class="playericon" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3647&amp;posColumn=3647.1"></i>
+									</div>
+
+								</a>
+
+							</div>
+
+							<div class="lesson-infor" style="height: 88px;">
+								<h2 class="lesson-info-h2"><a href="//www.jikexueyuan.com/course/3647.html" target="_blank" jktag="&amp;posGP=103001&amp;posArea=0002&amp;posOper=2004&amp;aCId=3647&amp;posColumn=3647.1">微软人工智能 － 数据分析平台</a></h2>
+								<p style="height: 36px;  display: block;">
+									随着移动互联网、物联网技术的发展，企业将有能力收集到越来越多的数据，数据的统计、分析甚至是机器学习成为如今最热门的话题。为了满足飞速累积的数据和日益增长的需求，数据分析人员对便捷的机器学习训练工具、高度自管理化的大数据分析平台有着强烈的渴望。
+
+								</p>
+								<div class="timeandicon">
+									<div class="cf">
+										<dl>
+											<dd class="mar-b8"><i class="time-icon"></i><em>3课时
+							122分钟</em>
+											</dd>
+											<dd class="zhongji" style="display: block;">
+
+												<i class="xinhao-icon2"></i><em>中级</em>
+											</dd>
+
+										</dl>
+										<em class="learn-number" style="display: inline;">1050人学习</em>
+									</div>
+									<div class="cf">
+										<div class="lessonicon-box">
+
+											<a href="//www.jikexueyuan.com/course/microsoftai/">
+												<img src="https://a1.jikexueyuan.com/home/201706/07/18ee/5937ceef77561.png" alt="microsoftai" title="微软AI" jktag="&amp;posGP=101001&amp;posArea=0002&amp;posOper=2005&amp;aCId=3647&amp;posColumn=3647.1&amp;aCCate=microsoftai" width="16">
+											</a>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+
+					</ul>
+				</div>
+
+				<div id="pager"></div>
+			</div>
+
+		</div>
+		<!--footer-->
+		<div class="footer">
+			<div class="footContent">
+
+				<div class="jk-logo">
+					<img src="//e.jikexueyuan.com/headerandfooter/images/jk-logo-footer.png?t=1495686193000">
+					<p>极客学院，编程是一种信仰！</p>
+				</div>
+
+				<dl>
+					<dt>职业学院</dt>
+					<dd>
+						<a target="_blank" href="//www.jikexueyuan.com/zhiye/web">Web前端工程师</a>
+					</dd>
+					<dd>
+						<a target="_blank" href="//www.jikexueyuan.com/zhiye/python">Python Web工程师</a>
+					</dd>
+					<dd>
+						<a target="_blank" href="//www.jikexueyuan.com/zhiye/go">Go语言工程师</a>
+					</dd>
+					<!--<dd><a target="_blank" href="//j.jikexueyuan.com/train/android?huodong=jiuye_android_in">Android学院</a></dd>-->
+					<dd>
+						<a target="_blank" href="//www.jikexueyuan.com/zhiye/ios">iOS工程师</a>
+					</dd>
+					<dd>
+						<a target="_blank" href="//www.jikexueyuan.com/zhiye/wechatapp">微信小程序工程师</a>
+					</dd>
+				</dl>
+
+				<dl>
+					<dt>会员课程</dt>
+					<dd>
+						<a target="_blank" href="//www.jikexueyuan.com/course/">课程库</a>
+					</dd>
+					<dd>
+						<a target="_blank" href="//www.jikexueyuan.com/path/">知识体系图</a>
+					</dd>
+					<dd>
+						<a target="_blank" href="//ke.jikexueyuan.com/zhiye/">职业路径图</a>
+					</dd>
+					<dd>
+						<a target="_blank" href="//ke.jikexueyuan.com/xilie/">系列课程</a>
+					</dd>
+					<dd>
+						<a target="_blank" href="//www.jikexueyuan.com/tag/">课程标签</a>
+					</dd>
+				</dl>
+
+				<dl>
+					<dt>极客社区</dt>
+					<dd>
+						<a target="_blank" href="//wenda.jikexueyuan.com/">技术问答</a>
+					</dd>
+					<dd>
+						<a target="_blank" href="//wiki.jikexueyuan.com/">Wiki</a>
+					</dd>
+					<dd>
+						<a target="_blank" href="//download.jikexueyuan.com/">资源下载</a>
+					</dd>
+					<dd>
+						<a target="_blank" href="//qun.jikexueyuan.com/">社群</a>
+					</dd>
+				</dl>
+
+				<dl>
+					<dt>其他</dt>
+					<dd>
+						<a target="_blank" href="//help.jikexueyuan.com/">关于我们</a>
+					</dd>
+					<dd>
+						<a target="_blank" href="//help.jikexueyuan.com/join.html">加入我们</a>
+					</dd>
+					<dd>
+						<a target="_blank" href="//j.jikexueyuan.com/evangelist/apply">讲师合作</a>
+					</dd>
+					<dd>
+						<a target="_blank" href="//help.jikexueyuan.com/contact.html">联系我们</a>
+					</dd>
+					<dd>
+						<a target="_blank" href="//www.jikexueyuan.com/friendlink.html">友情链接</a>
+					</dd>
+				</dl>
+
+				<div class="jk-down">
+					<p class="hot-tel">服务热线:400-678-8266</p>
+					<div class="downCon down-ios">
+						<img src="//e.jikexueyuan.com/headerandfooter/images/app.png?t=1495686193000" class="twoCode" alt="下载二维码"> iPhone
+					</div>
+					<div class="downCon down-and">
+						<img src="//e.jikexueyuan.com/headerandfooter/images/app.png?t=1495686193000" class="twoCode" alt="下载二维码"> Android
+					</div>
+				</div>
+			</div>
+
+			<div class="w-1000 copyright">
+				Copyright © 2013-2017&nbsp;
+				<a style="color: #999;;" href="//www.jikexueyuan.com/" target="_blank">jikexueyuan.com</a> All Rights Reserved. 京ICP备11018032号-8 京公网安备11010802020210
+				<a href="//qun.jikexueyuan.com/jikexueyuan/topic/430" target="_blank" class="down-wechat"></a>
+				<a href="//weibo.com/jikexueyuan" target="_blank" class="down-sina"></a>
+				<a style="display:block; margin: 15px auto 0" id="___szfw_logo___" href="https://credit.szfw.org/CX20160908025320080267.html" target="_blank"><img src="//e.jikexueyuan.com/headerandfooter/images/cert.png?t=1495686193000" width="60px" border="0"></a>
+			</div>
+		</div>
+
+	</body>
+
+</html>

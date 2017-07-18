@@ -1,0 +1,948 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.contentMeddleTitleLi > li {
+  display: inline-block;
+  padding: 10px;
+  padding-right: 10px;
+  font-size: 15px;
+  color: gray;
+  list-style: none;
+}
+.contentMeddleTitleLi > li:nth-child(1) {
+  border-right: 1px solid gainsboro;
+}
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  background: #f5f5f5;
+}
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}
+#header {
+  width: 100%;
+  height: 60px;
+  background: #fff;
+  position: relative;
+}
+#header a {
+  color: black;
+  text-decoration: none;
+}
+#header a:hover {
+  color: #35b558;
+}
+header {
+  width: 1000px;
+  height: 40px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #fff;
+  font-size: 15px;
+}
+header ul li:hover i.arrow-icon {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transition: 1s;
+}
+.arrow-icon {
+  width: 8px;
+  height: 8px;
+  border-top: 1px solid #c1c1c1;
+  border-left: 1px solid #c1c1c1;
+  display: inline-block;
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  transform-origin: 4px 4px;
+  margin-left: 5px;
+}
+.zhiyeDiv {
+  position: absolute;
+  background: #fff;
+  display: none;
+  z-index: 100;
+}
+.zhiyeDiv a {
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 15px;
+  font-size: 10px;
+  width: 280px;
+}
+.zhiyeLi:hover div {
+  display: block;
+}
+.web-icon {
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  vertical-align: middle;
+  background: url("img/icon2.png") 0 0 no-repeat;
+  background-size: 64px 64px;
+  background-position: -15px -27px;
+}
+.wechat-icon {
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  vertical-align: middle;
+  background: url("img/icon1.png") 0 0 no-repeat;
+  background-size: 16px 148px;
+  background-position: -2px -60px;
+}
+.php-icon {
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  vertical-align: middle;
+  background: url("img/icon1.png") 0 0 no-repeat;
+  background-size: 16px 148px;
+  background-position: -2px -21px;
+}
+.go-icon {
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  vertical-align: middle;
+  background: url("img/icon1.png") 0 0 no-repeat;
+  background-size: 16px 148px;
+  background-position: -2px -38px;
+}
+.python-icon {
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  vertical-align: middle;
+  background: url("https://e.jikexueyuan.com/headerandfooter/images/allicon4.png?t=20170525") 0 0 no-repeat;
+  background-size: 16px 148px;
+  background-position: -2px -2px;
+}
+.zhiyeDiv h5 {
+  background-color: #fafafa;
+  height: 28px;
+  line-height: 28px;
+  padding: 0 15px;
+  margin: 10px 0;
+  font-weight: 300;
+}
+.huiYuanDiv {
+  padding: 10px 10px;
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  background: #fff;
+  font-size: 12px;
+  color: #666;
+  width: 280px;
+}
+.huiYuanLi:hover div {
+  display: block;
+}
+.huiYuanDiv a {
+  display: block;
+}
+.huiYuanDiv span {
+  color: #bbb;
+  float: right;
+}
+.kck-icon {
+  width: 14px;
+  height: 14px;
+  vertical-align: middle;
+  display: inline-block;
+  background: url("img/icon2.png") 0 0 no-repeat;
+  background-size: 64px 64px;
+  margin-right: 10px !important;
+  background-position: 0 -13px;
+}
+.zyljt-icon {
+  width: 14px;
+  height: 14px;
+  vertical-align: middle;
+  display: inline-block;
+  background: url("img/icon2.png") 0 0 no-repeat;
+  background-size: 64px 64px;
+  background-position: -45px 0;
+}
+.zstxt-icon {
+  width: 14px;
+  height: 14px;
+  vertical-align: middle;
+  display: inline-block;
+  background: url("img/icon2.png") 0 0 no-repeat;
+  background-size: 64px 64px;
+  background-position: -30px -11px;
+}
+.xlkc-icon {
+  width: 14px;
+  height: 14px;
+  vertical-align: middle;
+  display: inline-block;
+  background: url("img/icon2.png") 0 0 no-repeat;
+  background-size: 64px 64px;
+  background-position: 0 2px;
+}
+.kcbq-icon {
+  width: 14px;
+  height: 14px;
+  vertical-align: middle;
+  display: inline-block;
+  background: url("img/icon2.png") 0 0 no-repeat;
+  background-size: 64px 64px;
+  background-position: -15px -13px;
+}
+.vip-icon {
+  width: 14px;
+  height: 14px;
+  vertical-align: middle;
+  display: inline-block;
+  background: url("img/icon2.png") 0 0 no-repeat;
+  background-size: 64px 64px;
+  background-position: -16px 0;
+}
+.jiKexuyuanDiv {
+  padding: 10px 10px;
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  background: #fff;
+  font-size: 12px;
+  color: #666;
+  width: 280px;
+}
+.jiKexuyuanLi:hover div {
+  display: block;
+}
+.jiKexuyuanDiv a {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  color: #666;
+}
+.jswd-icon {
+  width: 14px;
+  height: 14px;
+  vertical-align: middle;
+  display: inline-block;
+  background: url("img/icon2.png") 0 0 no-repeat;
+  background-size: 64px 64px;
+  background-position: 0 -27px;
+}
+.wiki-icon {
+  width: 14px;
+  height: 14px;
+  vertical-align: middle;
+  display: inline-block;
+  background: url("img/icon2.png") 0 0 no-repeat;
+  background-size: 64px 64px;
+  background-position: -29px -27px;
+}
+.sq-icon {
+  width: 14px;
+  height: 14px;
+  vertical-align: middle;
+  display: inline-block;
+  background: url("img/icon2.png") 0 0 no-repeat;
+  background-size: 64px 64px;
+  background-position: 0 2px;
+}
+.zygx-icon {
+  width: 14px;
+  height: 14px;
+  vertical-align: middle;
+  display: inline-block;
+  background: url("img/icon2.png") 0 0 no-repeat;
+  background-size: 64px 64px;
+  background-position: -30px 0;
+}
+.jiKexuyuanDiv span {
+  color: #bbb;
+  float: right;
+}
+.leftNav li {
+  display: inline;
+  height: 40px;
+  line-height: 40px;
+  padding-right: 30px;
+  padding-left: 10px;
+  float: left;
+}
+.rightNav li {
+  display: inline;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 30px;
+  float: right;
+}
+.search-icon {
+  height: 17px;
+  width: 17px;
+  background: url("img/search-icon.png") 0 0 no-repeat;
+  background-size: 17px 17px;
+  background-position: 0, 0;
+  display: inline-block;
+}
+.app-icon {
+  height: 17px;
+  width: 17px;
+  background: url("img/app-icon.png") 0 0 no-repeat;
+  background-size: 17px 17px;
+  background-position: 0, 0;
+  display: inline-block;
+}
+.noti-icon {
+  height: 17px;
+  width: 17px;
+  background: url("img/icon-msg.png") 0 0 no-repeat;
+  background-size: 17px 17px;
+  background-position: 0, 0;
+  display: inline-block;
+}
+.submenu {
+  background: #fff;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  display: none;
+  z-index: 10;
+}
+.personCenterLi:hover dl {
+  display: block;
+}
+.personCenter {
+  display: none;
+  background: #fff;
+  font-size: 12px;
+  line-height: 35px;
+  vertical-align: middle;
+  width: 120px;
+  text-align: left;
+  margin-top: 10px;
+  padding-top: 20px;
+  position: absolute;
+  right: 0px;
+  z-index: 10;
+}
+.personCenter dd {
+  margin-left: 10px;
+}
+.rzno-vip {
+  margin-right: 10px;
+  display: inline-block;
+  width: 45px;
+  height: 14px;
+  background: url("img/rz-no.png") 0 0 no-repeat;
+  float: left;
+  background-size: 45px 14px;
+}
+.year-vip {
+  margin-right: 10px;
+  display: inline-block;
+  width: 45px;
+  height: 14px;
+  background: url("img/allvipicon.png") 0 0 no-repeat;
+  float: right;
+  background-size: 306px 16px;
+  background-position: -143px -1px;
+}
+.xxzx-icon {
+  margin-right: 10px;
+  display: inline-block;
+  background: url("img/allicon2.png") 0 0 no-repeat;
+  background-size: 64px 64px;
+  width: 12px;
+  height: 12px;
+  background-position: -16px -15px;
+}
+.grzy-icon {
+  margin-right: 10px;
+  display: inline-block;
+  background: url("img/allicon2.png") 0 0 no-repeat;
+  background-size: 64px 64px;
+  width: 12px;
+  height: 12px;
+  background-position: -45px -1px;
+}
+.zhsz-icon {
+  margin-right: 10px;
+  display: inline-block;
+  background: url("img/allicon2.png") 0 0 no-repeat;
+  background-size: 64px 64px;
+  width: 12px;
+  height: 12px;
+  background-position: -30px -1px;
+}
+.tc-icon {
+  margin-right: 10px;
+  display: inline-block;
+  background: url("img/allicon2.png") 0 0 no-repeat;
+  background-size: 64px 64px;
+  width: 12px;
+  height: 12px;
+  background-position: -16px -1px;
+}
+.appLoad:hover div {
+  display: block;
+}
+#userpoto {
+  border-radius: 20px;
+  border: 1px solid gainsboro;
+}
+#content {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  clear: both;
+}
+/*leftAside*/
+.contentLeft {
+  width: 210px;
+  float: left;
+  background-color: #fff;
+}
+.kechengKu {
+  width: 100%;
+  border: 1px solid #35b558;
+  position: relative;
+}
+.kechengKu h2 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #35b558;
+  height: 37px;
+  width: 210px;
+}
+.kechengKu a {
+  text-decoration: none;
+}
+.kechengKu > div {
+  cursor: pointer;
+  width: 210px;
+  height: 37px;
+  border-bottom: 1px solid;
+  background: url(https://s1.jikexueyuan.com/common/images/icon-more_cd68622.png) 186px center no-repeat;
+  background-size: 6px 10px;
+}
+.kechengKu ul li {
+  list-style: none;
+  cursor: pointer;
+  width: 208px;
+  height: 37px;
+  border-bottom: 1px solid #f5f5f5;
+  background: url(https://s1.jikexueyuan.com/common/images/icon-more_cd68622.png) 186px center no-repeat;
+  background-size: 6px 10px;
+  padding-left: 32px;
+}
+.kechengKu > div a {
+  font-size: 12px;
+  color: #666;
+  line-height: 36px;
+  padding-left: 10px;
+}
+.kechengKu ul a {
+  font-size: 12px;
+  color: #666;
+  line-height: 36px;
+}
+.icon-course-curr {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  background: url(https://s1.jikexueyuan.com/common/images/icon-course-curr_0743c98.png) no-repeat 0 0px 15px;
+  vertical-align: baseline;
+}
+.contentLeftBottom li {
+  list-style: none;
+  height: 40px;
+}
+.contentLeftBottom li a {
+  line-height: 40px;
+  color: black;
+  display: block;
+  text-decoration: none;
+  padding-left: 10px;
+}
+.icon-zylj {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 8px;
+  vertical-align: text-bottom;
+  background: url(https://s1.jikexueyuan.com/common/images/icon-zstx_a1ae096.png) no-repeat left center;
+  background-size: 15px 12.5px;
+}
+.icon-zstx {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 8px;
+  vertical-align: text-bottom;
+  background: url(https://s1.jikexueyuan.com/common/images/icon-zstx_a1ae096.png) no-repeat left center;
+  background-size: 15px 12.5px;
+}
+.icon-xlkc {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 8px;
+  vertical-align: text-bottom;
+  background: url(https://s1.jikexueyuan.com/common/images/icon-xlkc_2e47588.png) no-repeat left center;
+  background-size: 14px 14px;
+}
+.icon-kcbq {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 8px;
+  vertical-align: text-bottom;
+  background: url(https://s1.jikexueyuan.com/common/images/icon-kcbq_65534c2.png) no-repeat left center;
+  background-size: 15px 13px;
+}
+/*移动开发*/
+.contentLeftLi li:nth-child(1):hover div {
+  display: block;
+}
+.yidongkaifDiv {
+  display: none;
+  width: 400px;
+  background: #fff;
+  position: absolute;
+  padding-left: 10px;
+  left: 210px;
+  top: 0px;
+  height: 460px;
+  border: 1px solid #f5f5f5;
+  box-shadow: 2px 2px 5px #888888;
+  z-index: 10;
+}
+.yidongkaifDiv dt {
+  display: block;
+  border-bottom: 1px solid #f5f5f5;
+  height: 37px;
+  line-height: 45px;
+}
+.yidongkaifDiv dd a {
+  height: 14px;
+  line-height: 14px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  padding: 0 7px;
+  color: #666;
+  display: inline-block;
+  font-size: 12px;
+  border-left: 1px solid #e0e0e0;
+  white-space: nowrap;
+  font-weight: 400;
+}
+/*前端开发*/
+.contentLeftLi li:nth-child(2):hover div {
+  display: block;
+}
+.qianduankaifDiv {
+  display: none;
+  width: 400px;
+  background: #fff;
+  position: absolute;
+  padding-left: 10px;
+  left: 210px;
+  top: 0px;
+  height: 460px;
+  border: 1px solid #f5f5f5;
+  box-shadow: 2px 2px 5px #888888;
+  z-index: 10;
+}
+.qianduankaifDiv dt {
+  display: block;
+  border-bottom: 1px solid #f5f5f5;
+  height: 37px;
+  line-height: 45px;
+}
+.qianduankaifDiv dd a {
+  height: 14px;
+  line-height: 14px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  padding: 0 7px;
+  color: #666;
+  display: inline-block;
+  font-size: 12px;
+  border-left: 1px solid #e0e0e0;
+  white-space: nowrap;
+  font-weight: 400;
+}
+/*企业IT 设计 产品 测试  人工智能开发  只能硬件物联网*/
+.contentLeftLi li:nth-child(9):hover div,
+.contentLeftLi li:nth-child(10):hover div,
+.contentLeftLi li:nth-child(11):hover div,
+.contentLeftLi li:nth-child(6):hover div {
+  display: block;
+}
+.contentLeftBottom li a:hover {
+  color: #35b558;
+}
+.contentMeddle {
+  width: 769px;
+  float: right;
+}
+.contentMeddleTitle {
+  width: 100%;
+  height: 40px;
+  clear: both;
+  background: #fff;
+  position: relative;
+}
+.contentMeddleTitle a:hover {
+  color: #35b558;
+}
+.contentMeddleTitleLi {
+  display: inline-block;
+}
+.zuixin:hover ul {
+  display: block;
+}
+.zuiXinUl {
+  display: none;
+  position: absolute;
+  box-shadow: 2px 2px 5px #888888;
+  width: 70px;
+  top: 40px;
+  left: 80px;
+  list-style: none;
+  background: #fff;
+}
+.zuiXinUl li {
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+}
+.zuiXinUl li a {
+  text-decoration: none;
+  color: gray;
+}
+.kechengLi:hover ul {
+  display: block;
+}
+.kechengUl {
+  display: none;
+  position: absolute;
+  box-shadow: 2px 2px 5px #888888;
+  width: 90px;
+  top: 40px;
+  left: 164px;
+  list-style: none;
+  background: #fff;
+}
+.kechengUl li {
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+}
+.kechengUl li a {
+  text-decoration: none;
+  color: gray;
+}
+.neirongLi:hover ul {
+  display: block;
+}
+.neirongUl {
+  display: none;
+  position: absolute;
+  box-shadow: 2px 2px 5px #888888;
+  width: 90px;
+  top: 40px;
+  left: 260px;
+  list-style: none;
+  background: #fff;
+}
+.neirongUl li {
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+}
+.neirongUl li a {
+  text-decoration: none;
+  color: gray;
+}
+.nanduLi:hover ul {
+  display: block;
+}
+.nanDuUl {
+  display: none;
+  position: absolute;
+  box-shadow: 2px 2px 5px #888888;
+  width: 90px;
+  top: 40px;
+  left: 359px;
+  list-style: none;
+  background: #fff;
+}
+.nanDuUl li {
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+}
+.nanDuUl li a {
+  text-decoration: none;
+  color: gray;
+}
+.contentMeddleTitleRightLi {
+  float: right;
+  padding-right: 10px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 15px;
+  color: gray;
+}
+.contentMeddleTitleRightLi li {
+  display: inline-block;
+  border-left: 1px solid gainsboro;
+  padding-left: 7px;
+}
+.icon1 {
+  width: 19px;
+  height: 15px;
+  display: inline-block;
+  background: url(img/icon4.png) 0 0 no-repeat;
+  background-size: 70px 15px;
+  background-position: 2px 0px;
+}
+.icon2 {
+  width: 19px;
+  height: 15px;
+  display: inline-block;
+  background: url(img/icon4.png) 0 0 no-repeat;
+  background-size: 70px 15px;
+  background-position: -17px 0px;
+}
+.contentDecribleDiv {
+  width: 770px;
+  margin-top: 20px;
+}
+.contentGone {
+  display: none;
+}
+.contentone {
+  width: 770px;
+  margin-top: 20px;
+}
+.contentHorizonDivone {
+  width: 185px;
+  height: 100px;
+  float: left;
+  margin-right: 15px;
+  position: relative;
+}
+.contentHorizon li {
+  height: 100px;
+  padding: 0;
+  background-color: #fff;
+  margin-top: 13px;
+  list-style: none;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.lessonimghorizon {
+  width: 185px;
+  height: 100px;
+}
+.lesson-info-h2,
+.lesson-list2 .lesson-infor h5 {
+  font-size: 14px;
+  color: #333;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  overflow: hidden;
+}
+.lesson-info-h2 a {
+  color: #333;
+  text-decoration: none;
+}
+.lesson-infor p {
+  color: gray;
+  font-size: 12px;
+  opacity: 1 !important;
+  line-height: 18px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.timeandicon {
+  width: 230px;
+  font-size: 12px;
+  color: gray;
+  padding-left: 10px;
+  position: absolute;
+  background: #fff;
+}
+.timeandicon dl dd {
+  font-size: 12px;
+  float: left;
+  display: inline-block;
+  margin-right: 15px;
+}
+.timeandicon .cf img {
+  position: absolute;
+  right: -70px;
+  bottom: 3px;
+}
+.contentDecribleUl {
+  width: 770px;
+}
+.lessonimg-box,
+.lessonimg,
+.lessonimg-box > a {
+  width: 240px;
+}
+.lesson-infor {
+  height: 88px;
+}
+.childA {
+  font-size: 15px;
+  margin-left: 10px;
+  display: block;
+}
+.childP {
+  font-size: 12px;
+  margin-left: 10px;
+  margin-top: 30px;
+}
+em {
+  font-size: 10px;
+}
+.time-icon {
+  background: url(https://s1.jikexueyuan.com/course/images/icon_7f8b929.png) 0 -72px no-repeat;
+  width: 14px;
+  height: 14px;
+  display: block;
+  float: left;
+  margin-right: 8px;
+  vertical-align: bottom;
+}
+.xinhao-icon2 {
+  background: url(https://s1.jikexueyuan.com/common/images/tow-ji_ec2b553.png) 0 0 no-repeat;
+  background-size: 14px 14px;
+  width: 14px;
+  height: 14px;
+  display: block;
+  float: left;
+  margin-right: 8px;
+}
+.contentDecribleUl li {
+  float: left;
+  width: 240px;
+  margin: 5px;
+  list-style: none;
+  margin-top: 10px;
+  background: #fff;
+}
+.timeandicon em {
+  margin-left: 10px;
+}
+.learn-number {
+  float: right;
+  margin-right: -10px;
+}
+#pager {
+  width: 100%;
+  margin: auto;
+  margin-top: 40px;
+  background: #fff;
+  margin-bottom: 30px;
+}
+/*footer*/
+.footer {
+  width: 100%;
+  clear: both;
+  margin-top: 20px;
+  background: #fff;
+  border-top: 1px solid gainsboro;
+}
+.footContent {
+  position: relative;
+  width: 1000px;
+  height: 215px;
+  margin: 0 auto;
+  border-bottom: 1px solid #f5f5f5;
+  padding-top: 25px;
+  box-sizing: border-box;
+  border-bottom: 1px solid gainsboro;
+}
+.jk-logo {
+  float: left;
+  margin-right: 80px;
+}
+.footContent dl dt {
+  font-size: 14px;
+  line-height: 30px;
+  color: #808080;
+}
+.footContent dd a {
+  font-size: 12px;
+  line-height: 30px;
+  color: gray;
+  text-decoration: none;
+}
+.jk-down p,
+div {
+  color: gray;
+}
+.jk-logo img {
+  width: 109px;
+  height: 40px;
+  display: block;
+}
+.jk-logo p {
+  font-size: 12px;
+  color: #999;
+  margin-top: 20px;
+}
+.footContent dl {
+  width: 135px;
+  color: #808080;
+  float: left;
+}
+.downCon img {
+  display: inline-block;
+  width: 115px;
+  height: 153px;
+  position: absolute;
+  top: -157px;
+  left: 12px;
+  z-index: 2;
+  display: none;
+}
+.jk-down {
+  float: right;
+  width: 180px;
+  text-align: left;
+}
+.copyright {
+  font-size: 12px;
+  color: #999;
+  margin: 0 auto;
+  width: 1000px;
+  text-align: center;
+  padding: 15px 0;
+}
+.copyright a {
+  font-size: 12px;
+  color: #999;
+  text-decoration: none;
+}
